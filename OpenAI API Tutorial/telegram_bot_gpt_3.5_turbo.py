@@ -21,7 +21,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
   await context.bot.send_message(chat_id=update.effective_chat.id, text=askai(update.message.text))
 
 if __name__ == '__main__':  
-  application = ApplicationBuilder().token('7181684065:AAHnVl1ZcWBuwPTj8UXNydkR3lbfbv8mz0I').build()      
+  application = ApplicationBuilder().token('telegram_bot_token').build()      
   
   start_handler = CommandHandler('start', start)  
   echo_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), echo)      
