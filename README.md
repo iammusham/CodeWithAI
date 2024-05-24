@@ -1,5 +1,5 @@
 # Code With AI 
 
-Hey Developers it's for you!!!
+"AI-Powered Coding"
 
 Here you can get all code and resources related to my YouTube channel videos.
