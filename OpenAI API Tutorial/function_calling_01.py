@@ -5,7 +5,7 @@ import json
 
 # Paste Your OpenAI API key here
 client = OpenAI(api_key=openai_api_key)
-model = "gpt-3.5-turbo"
+model = "gpt-4o"
 
 # Predefined stock prices
 stock_prices = {
