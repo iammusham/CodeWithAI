@@ -83,5 +83,6 @@ def run_conversation(user_input):
         return output
 
 while True:
-  user_input = input("Enter your query: ")
+  user_input = input("ChatGPT: ")
+  print()
   print(run_conversation(user_input))
