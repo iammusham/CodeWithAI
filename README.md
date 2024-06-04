@@ -1,5 +1,5 @@
 # Code With AI 
 
-"AI-Powered Coding"
+Welcome to Code With AI GitHub Repo
 
 Here you can get all code and resources related to my YouTube channel videos.
