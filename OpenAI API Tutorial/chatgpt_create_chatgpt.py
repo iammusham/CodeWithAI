@@ -8,7 +8,7 @@ client = OpenAI(api_key=openai_api_key)
 while True:
   print()
   user_input = input("You: ")
-  if prompt=="q":
+  if user_input=="q":
     break
   messages = [{"role": "system", "content": "Act as ChatGPT"},{"role": "user", "content": user_input}]
   response = client.chat.completions.create(model=model,messages= messages,max_tokens=20)
