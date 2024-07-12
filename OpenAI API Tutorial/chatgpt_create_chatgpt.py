@@ -2,6 +2,8 @@ from openai import OpenAI
 import time
 
 model="gpt-3.5-turbo"
+
+# Paste your_openai_api_key here!
 client = OpenAI(api_key="your_openai_api_key")
 
 while True:
