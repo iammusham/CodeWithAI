@@ -10,9 +10,11 @@ while True:
   prompt = input("You: ")
   if prompt=="q":
     break
-  messages = [{"role": "system", "content": "You are Alpha, Musham 's Personal assistant"},{"role": "user", "content": prompt}]
+  messages = [{"role": "system", "content": "Act as ChatGPT"},{"role": "user", "content": prompt}]
   response = client.chat.completions.create(model=model,messages= messages,max_tokens=30)
-  print()
   output=response.choices[0].message.content
-  print(f"ChatGPT: {output}")
+  print("\nChatGPT: ", end = '')
+  for char in output:
+    print(char, end='', flush=True)
+    time.sleep(0.08)
 
