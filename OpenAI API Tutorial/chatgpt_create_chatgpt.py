@@ -1,9 +1,8 @@
 from openai import OpenAI
 import time
-from keys import openai_api_key
 
 model="gpt-3.5-turbo"
-client = OpenAI(api_key=openai_api_key)
+client = OpenAI(api_key="your_openai_api_key")
 
 while True:
   print()
