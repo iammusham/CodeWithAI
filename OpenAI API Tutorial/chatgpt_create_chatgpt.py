@@ -11,7 +11,7 @@ while True:
   if user_input=="q":
     break
   messages = [{"role": "system", "content": "Act as ChatGPT"},{"role": "user", "content": user_input}]
-  response = client.chat.completions.create(model=model,messages= messages,max_tokens=20)
+  response = client.chat.completions.create(model=model,messages= messages,max_tokens=60)
   output=response.choices[0].message.content
   print("\nChatGPT: ", end = '')
   for char in output:
