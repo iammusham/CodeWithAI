@@ -11,11 +11,10 @@ OpenAI Library-(pip install openai)
 """
 
 from openai import OpenAI
-from keys import openai_api_key
 import time, json, os, threading, subprocess
 
 # Paste your OpenAI API key here!
-client = OpenAI(api_key=openai_api_key)
+client = OpenAI(api_key="your_openai_api_key")
 # select your model!
 model = "gpt-4o-mini"
 
