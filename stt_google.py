@@ -10,7 +10,7 @@ SpeechRecognition Lib: (pip install SpeechRecognition)
 import speech_recognition as sr
 
 # Audio File Path
-audio_file = "C:\\Users\\Acer\\Downloads\\CodeWithAI\\sample_audio.wav"
+audio_file = "your_audio_file_path"
 
 r = sr.Recognizer()
 with sr.AudioFile(audio_file) as source:
