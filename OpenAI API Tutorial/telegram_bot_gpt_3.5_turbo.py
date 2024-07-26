@@ -1,7 +1,7 @@
 from openai import OpenAI 
 
 model = "gpt-3.5-turbo"
-client = OpenAI(api_key="openai_api_key")
+client = OpenAI(api_key="your_openai_api_key")
 
 def askai(user_input):
   response = client.chat.completions.create(model=model,messages=[{"role": "system", "content": "You are a helpful assistant."},{"role": "user", "content": user_input}])  
