@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-openai_api_key = "your_api_key"
+openai_api_key = "your_openai_api_key"
 
 model = "gpt-3.5-turbo"
 client = OpenAI(api_key=openai_api_key)
