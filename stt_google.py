@@ -18,7 +18,7 @@ with sr.AudioFile(audio_file) as source:
 try:
     transcript = r.recognize_google(audio)
 except sr.UnknownValueError:
-    transcript = "audio error"
+    transcript = "Audio error"
 except sr.RequestError as e:
     transcript = "Request error"
 print(transcript)
