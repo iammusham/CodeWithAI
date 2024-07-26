@@ -95,6 +95,7 @@ class Assistant:
         tokens = run.usage.total_tokens
         return outputs, tokens
     
+    # Function calling Decorator
     @classmethod
     def add_func(cls,func):
         cls.registered_functions[func.__name__] = func
@@ -148,4 +149,4 @@ if __name__=="__main__":
             ai.speak(output,tokens)
 
     finally:
-        ai.delete_thread()  
+        ai.delete_thread()
