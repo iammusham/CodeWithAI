@@ -7,11 +7,9 @@ Text to Speech using OpenAI TTS Model
 Requirements:
 Python: (winget install python) for windows only
 OpenAI Python Lib: (pip install openai)
-Pathlib Python Lib: (pip install pathlib)
 """
 
 from openai import OpenAI
-from pathlib import Path
 
 # Paste your OpenAI API key here!
 client = OpenAI(api_key="your_openai_api_key")
