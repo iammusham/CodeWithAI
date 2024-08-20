@@ -79,7 +79,8 @@ def detect_wake_word():
                 ct += 1
                 command += transcript
                 command += " "
-                print(wake_word_count)
+                print()
+                print("Detected No: " + wake_word_count)
 
             except sr.UnknownValueError:
               if ct>0:
