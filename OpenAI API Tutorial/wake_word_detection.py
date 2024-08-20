@@ -67,9 +67,9 @@ def detect_wake_word():
                 command += transcript
                 ct -= 1
                 print("Command: " + command)
-                output = ask(command)
-                tts(output)
-                print(f"Alpha: {output}")
+                # output = ask(command)
+                # tts(output)
+                # print(f"Alpha: {output}")
                 
               if "Alpha" in transcript:
                 subprocess.run(["termux-media-player", "play", "sound.mp3"],capture_output=True, text=True, check=True)
@@ -86,10 +86,10 @@ def detect_wake_word():
               if ct>0:
                 ct -= 1
                 print("Command: " + command)
-                output = ask(command)
-                tts(output)
-                print(f"Alpha: {output}")
-              #print("Audio Error")
+                #output = ask(command)
+                #tts(output)
+                #print(f"Alpha: {output}")
+              print("Audio Error")
             except sr.RequestError as e:
               print(f"Request Error {e}")
           os.remove(chunk_file)
