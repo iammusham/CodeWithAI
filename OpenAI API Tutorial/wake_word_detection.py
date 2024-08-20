@@ -7,8 +7,7 @@ import time, os, wave, subprocess
 model="gpt-4o-mini"
 
 # Paste your OpenAI API Key here
-from keys import openai_api_key
-client = OpenAI(api_key=openai_api_key)
+client = OpenAI(api_key="your_openai_api_key")
 
 # Integration with OpenAI API
 def ask(user_input):
@@ -33,7 +32,7 @@ def detect_wake_word():
   ct = 0
   
   # Parameters
-  file_path = "/data/data/com.termux/files/home/storage/music/Recordings/Standard Recordings/Standard recording 1.wav"
+  file_path = "live_recording_file_path"
   chunk_duration = 3
   sample_rate = 44100
   
