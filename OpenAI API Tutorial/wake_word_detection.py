@@ -23,7 +23,7 @@ def tts(text_input):
   warnings.filterwarnings("ignore", category=DeprecationWarning)
   response = client.audio.speech.create(model="tts-1",voice="onyx",input=text_input)
   response.stream_to_file("response.mp3")
-  termux_api = subprocess.run(["termux-media-player", "play", "response.mp3"],capture_output=True, text=True, check=True)
+  subprocess.run(["termux-media-player", "play", "response.mp3"],capture_output=True, text=True, check=True)
 
 # Wake Word Detection Function
 def detect_wake_word():
