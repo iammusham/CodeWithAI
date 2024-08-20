@@ -58,7 +58,7 @@ def detect_wake_word():
             
           with sr.AudioFile(chunk_file) as source:
             audio = recognizer.record(source)
-            #print(f"{last_processed_time}-{last_processed_time + chunk_duration}")
+            print(f"{last_processed_time}-{last_processed_time + chunk_duration}")
             
             try:
               transcript = recognizer.recognize_google(audio)
