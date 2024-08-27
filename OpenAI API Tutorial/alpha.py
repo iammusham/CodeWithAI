@@ -179,7 +179,7 @@ def update_memory(title, new_memory):
                 with open("memory.json",'w') as file:
                     json.dump(data,file,indent=4)
                 return f"memory with title '{title}' updated"
-            return "memory not found"
+        return "memory not found"
 
 
 @Alpha.add_func
