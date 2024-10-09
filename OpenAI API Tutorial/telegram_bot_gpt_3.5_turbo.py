@@ -8,9 +8,9 @@ def askai(user_input):
   output = response.choices[0].message.content  
   return output
 
-import loggingfrom telegram 
-import Updatefrom telegram.ext 
-import filters, MessageHandler, ApplicationBuilder, ContextTypes, CommandHandler
+import logging
+from telegram import Update
+from telegram.ext import filters, MessageHandler, ApplicationBuilder, ContextTypes, CommandHandler
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 
